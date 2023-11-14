@@ -1,1 +1,81 @@
 @import "./_base.scss";
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    .left {
+        background: url(./assets/bg-pattern-desktop.svg), $linear-light;
+        background-size: cover;
+        // background: $linear-light;
+
+        box-sizing: border-box;
+        padding-top: 65px;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        .left-content {
+            max-width: 444px;
+            .content {
+                margin-top: 136px;
+                h1 {
+                    font-size: 64px;
+                    color: $dark-grayish-red;
+                    font-weight: 600;
+                    line-height: 71px;
+                    letter-spacing: 17.321px;
+                    span {
+                        color: $desaturatedred;
+                        font-weight: 300;
+                    }
+                }
+                .description {
+                    color: $desaturatedred;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-top: 32px;
+                    margin-bottom: 40px;
+                }
+                .input {
+                    position: relative;
+                    font-size: 16px;
+                    input {
+                        height: 56px;
+                        width: 100%;
+                        border: 1px $desaturatedred solid;
+                        border-radius: 50px;
+                        padding-left: 20px;
+                        box-sizing: border-box;
+                        &::placeholder {
+                            color: $desaturatedred;
+                        }
+                    }
+                    button {
+                        padding: 0;
+                        position: absolute;
+                        border: none;
+                        background: $linear-bright;
+                        height: 57px;
+                        width: 100px;
+                        border-radius: 50px;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        height: 100%;
+        line-height: 0;
+        .img-desktop {
+            height: 100%;
+        }
+        .img-mobile {
+            display: none;
+        }
+    }
+}

@@ -95,7 +95,11 @@ function App() {
                                             />
                                         </>
                                     )}
-                                    <button type="submit">
+                                    <button
+                                        type="submit"
+                                        id="submit"
+                                        title="submit"
+                                    >
                                         <img src={Arrow} alt="" />
                                     </button>
                                 </form>
